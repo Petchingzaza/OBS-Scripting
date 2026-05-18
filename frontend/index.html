@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Question Form</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script type="module" src="./app.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Question?</h1>
+
+            <div class="field">
+                <label>ชื่อที่ให้ปรากฏ</label>
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="กรอกชื่อ"
+                >
+            </div>
+
+            <div class="field">
+                <label>คำถาม</label>
+                <textarea
+                    id="question"
+                    placeholder="พิมพ์คำถาม..."
+                ></textarea>
+            </div>
+
+            <button id="submitBtn">
+                ส่งคำถาม
+            </button>
+
+            <div id="status"></div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
