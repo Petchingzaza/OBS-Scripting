@@ -1,9 +1,6 @@
-from pydoc import text
-
 import obsws_python as obs
-from torch import res
 
-client = obs.ReqClient(host='localhost', port=4455, password='N68xJPtTN0s6Ug2k')
+client = obs.ReqClient(host='localhost', port=int(input("PORT : ")), password=input("PASSWORD : "))
 
 def change_text(text):
     res = client.set_input_settings(
