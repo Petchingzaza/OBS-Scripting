@@ -13,7 +13,9 @@ while True:
     try:
         change_text(data.json()[list(data.json().keys())[-1]]['question'])
         on_off("normal", "Main", True)
+        on_off("normal", "QR", False)
         time.sleep(5)
+        on_off("normal", "QR", True)
         on_off("normal", "Main", False)
     except Exception as e:
         print(e)
